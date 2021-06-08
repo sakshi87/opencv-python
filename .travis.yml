@@ -1,16 +1,4 @@
-git:
-    submodules: false
-
-# https://docs.travis-ci.com/user/caching
-cache:
-  directories:
-    # `cache: ccache: true` has no effect if `language:` is not `c` or `cpp`
-    - $HOME/.ccache
-
-# Add more cache stages (s2 etc) and corresponding OSX jobs like s1
-# if brew builds start to take longer than one Travis time limit
-stages:
-  - final
+language: python
 
 jobs:
   fast_finish: true
